@@ -1,0 +1,15 @@
+https://github.com/baluswt/balgo.git  
+
+
+for git push cmd
+
+
+git push https://github.com/baluswt/balgo.git <branch name>
+
+eg.
+
+git push https://github.com/baluswt/balgo.git origin master
+
+or
+
+git push origin master
