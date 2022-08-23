@@ -1,12 +1,14 @@
 https://github.com/baluswt/balgo.git  
 
 
+personal access token is : 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
+
+
+
+--------------------------------------------------------------------------------
+
 for git push cmd
 
-
-git push https://github.com/baluswt/balgo.git <branch name>
-
-eg.
 
 git push https://github.com/baluswt/balgo.git origin master
 
