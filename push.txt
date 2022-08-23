@@ -13,3 +13,7 @@ git push https://github.com/baluswt/balgo.git origin master
 or
 
 git push origin master
+
+or
+
+git push -u origin --all
