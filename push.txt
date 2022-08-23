@@ -1,7 +1,7 @@
 https://github.com/baluswt/balgo.git  
 
 
-personal access token is : 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
+personal access token is : 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
 
 
 
