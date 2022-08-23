@@ -7,10 +7,7 @@ personal access token is : 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
 
 --------------------------------------------------------------------------------
 
-for git push cmd
-
-
-git push https://github.com/baluswt/balgo.git origin master
+*Important  cmd for github*
 
 or
 
@@ -19,3 +16,10 @@ git push origin master
 or
 
 git push -u origin --all
+
+-----------------------------------------------
+
+delete branch cmd :
+// delete branch locally :  git branch -d <branch Name>
+
+// delete branch remotely : git push origin --delete <branch Name>
