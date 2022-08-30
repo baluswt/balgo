@@ -8432,7 +8432,7 @@ readers do not read off random characters that represent icons */
     width: 44px;
     height: 44px;
     background-color: #fff;
-    box-shadow: inset 0px 0px 0px 2px #fc5b3f;
+    /*box-shadow: inset 0px 0px 0px 2px #fc5b3f;*/
     border: 18px solid #fff;
     font-size: 18px;
     font-family: "Inter", sans-serif;
