@@ -97,7 +97,7 @@ header .in-optional-nav a.uk-button-text i {
 }
 
 header .in-optional-nav a.uk-button-text:hover {
-    color: #fff;
+   /* color: #fff;*/
 }
 
 header .in-optional-nav .uk-button-primary {
@@ -166,6 +166,7 @@ header .uk-navbar-dropdown li {
 
     .in-mobile-nav .uk-button {
         color: #fff;
+        background-color: black;
     }
 }
 
@@ -231,7 +232,7 @@ header .uk-navbar-dropdown li {
 }
 
 .in-slideshow {
-    background-color: #212224;
+   /* background-color: #212224;*/
 }
 
 .in-slideshow .uk-slidenav {
@@ -241,7 +242,7 @@ header .uk-navbar-dropdown li {
 
 .in-slideshow .in-slideshow-features {
     height: 220px;
-    background: linear-gradient(0deg, #212224 65%, rgba(33, 34, 36, 0.3) 100%);
+    /*background: linear-gradient(0deg, #212224 65%, rgba(33, 34, 36, 0.3) 100%);*/
     margin-top: -190px;
 }
 
@@ -8383,7 +8384,7 @@ readers do not read off random characters that represent icons */
 }
 
 .in-liquid-1 .uk-card-media-top img {
-    /*position: relative;*/
+  /*  position: relative;*/
     right: -85px;
     margin-top: -15px;
     margin-bottom: -60px;
@@ -8432,7 +8433,7 @@ readers do not read off random characters that represent icons */
     width: 44px;
     height: 44px;
     background-color: #fff;
-    box-shadow: inset 0px 0px 0px 2px #fc5b3f;
+   /*box-shadow: inset 0px 0px 0px 2px #fc5b3f;*/
     border: 18px solid #fff;
     font-size: 18px;
     font-family: "Inter", sans-serif;
