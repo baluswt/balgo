@@ -23,3 +23,18 @@ delete branch cmd :
 // delete branch locally :  git branch -d <branch Name>
 
 // delete branch remotely : git push origin --delete <branch Name>
+
+
+// switch branch//
+
+git checkout <branch Name>
+
+// add new files //
+
+git touch <filename.extension>
+
+// git add -A        	-> add all files in branch but unstaged area files.
+
+//git commit -m "msg"    -> In the staged area files.
+
+// git push				 -> push code on github server.
