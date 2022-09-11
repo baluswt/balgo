@@ -31,6 +31,10 @@
      <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.0/css/bootstrap.min.css">
      <!-- Latest compiled and minified CSS -->
 
+     <script src="js/angular.min.js"></script>
+     <script src="js/angular-route.js"></script>
+     <script src="js/sweetalert.min.js"></script>
+
 <style type="text/css">
  td{
     text-align: center;
@@ -106,7 +110,7 @@
 
 </head>
 
-<body>
+<body ng-app="myApp" ng-controller="myCtrl">
     <!-- preloader begin -->
     <div class="in-loader">
         <div></div>
@@ -1142,3 +1146,14 @@
     <script src="js/config-theme.js"></script>
 </body>
 </html>
+
+<script type="text/javascript">
+var app = angular.module('myApp', []);
+app.controller('myCtrl', function($scope,$window,$http) {
+
+
+
+});
+
+
+</script>
