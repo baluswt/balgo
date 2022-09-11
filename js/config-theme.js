@@ -54,7 +54,7 @@ const HomepageApp = {
         modalIframe({
             videos: [{
                 id: 'video-1', // video id (should not be the same as the next video)
-                url: 'https://www.youtube.com/embed/F3QpgXBtDeo' // video embed url
+                //url: 'https://www.youtube.com/embed/F3QpgXBtDeo' // video embed url
             }]
         });
     },
