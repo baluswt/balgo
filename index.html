@@ -106,11 +106,31 @@
     background:#00495d;
 }
 
+
+.spin1 > img {
+  display: block; /* removes bottom margin/whitespace */
+  -webkit-transition: -webkit-transform .8s ease-in-out;
+  transition: transform .8s ease-in-out;
+}
+
+.spin1:hover > img {
+  -webkit-transform: rotate(360deg);
+  transform: rotate(360deg);
+}
+ul li{
+    color: #FFF;
+}
+h1,h2,h3,h4,h5{
+    color: #FFF;
+}
+
+
+
 </style>
 
 </head>
 
-<body ng-app="myApp" ng-controller="myCtrl">
+<body ng-app="myApp" ng-controller="myCtrl" style="background-color: #2F237C;color: #FFF">
     <!-- preloader begin -->
     <div class="in-loader">
         <div></div>
@@ -122,7 +142,7 @@
 
         <!-- sticky URL -->
         <div id="feedback">
-            <a href="index2.html">Night Mode</a>
+            <a href="index2.html">Dark Mode</a>
         </div>
 
         <!--  -->
@@ -142,10 +162,10 @@
                             <!-- logo end -->
                             <!-- navigation begin -->
                             <ul class="uk-navbar-nav uk-visible@m">
-                                <li><a href="#home">Home</a></li>
-                                <li><a href="#strategy">Strategies</a></li>
-                                <li><a href="#about">About Us</a></li>
-                                <li><a href="contact.html">Contact</a></li>
+                                <li><a href="#home" style="color: #FFF">Home</a></li>
+                                <li><a href="#strategy" style="color: #FFF">Strategies</a></li>
+                                <li><a href="#about" style="color: #FFF">About Us</a></li>
+                                <li><a href="contact.html" style="color: #FFF">Contact</a></li>
                             </ul>
                             <!-- navigation end -->
                         </div>
@@ -153,7 +173,7 @@
                     <div class="uk-navbar-right">
                         <div class="uk-navbar-item uk-visible@m in-optional-nav">
                             <a href="registration.html" class="uk-button uk-button-primary uk-border-rounded">Create Account</a>
-                            <a href="account.html" class="uk-button uk-button-text"><i class="fas fa-user-circle"></i></a>
+                            <a href="account.html" class="uk-button uk-button-text"><i class="fas fa-user-circle" style="color: red"></i></a>
                         </div>
                     </div>
                 </div>
@@ -171,8 +191,8 @@
                             <div class="uk-grid-medium" data-uk-grid>
                                 <div class="uk-width-1-2@s">
                                     <div class="uk-overlay">
-                                        <h1 style="color: black">New platform to implement Your trading strategies.</h1>
-                                        <p class="uk-text-lead uk-visible@m" style="color: black">Trade forex, commodities, synthetic and stock indices from a single account</p>
+                                        <h1 style="color: #FFF">New platform to implement Your trading strategies.</h1>
+                                        <p class="uk-text-lead uk-visible@m" style="color: #FFF">It’s time to adopt the algo trading and to get rid of taking loses by the manual trading.</p>
                                         <a href="account.html" class="uk-button uk-button-danger uk-border-rounded uk-visible@s">Sign In Now</a>
                                     </div>
                                 </div>
@@ -187,8 +207,8 @@
                             <div class="uk-grid-medium" data-uk-grid>
                                 <div class="uk-width-1-2@s">
                                     <div class="uk-overlay">
-                                        <h1 style="color: black">Global Strategies for buying & selling.</h1>
-                                        <p class="uk-text-lead uk-visible@m" style="color: black">A trusted destination for traders worldwide, Authorised by FCA, ASIC &amp; FSCA</p>
+                                        <h1 style="color: #FFF">Global Strategies trade for buying & selling.</h1>
+                                        <p class="uk-text-lead uk-visible@m" style="color: #FFF">Its Time saving, accurate, fast, and highly profitable solution for the day trader or investors.</p>
                                         <a href="account.html" class="uk-button uk-button-danger uk-border-rounded uk-visible@s">Sign In Now</a>
                                     </div>
                                 </div>
@@ -204,26 +224,41 @@
                 <div class="uk-section uk-padding-remove-vertical in-slideshow-features uk-visible@m">
                     <div class="uk-container">
                         <ul class="uk-grid uk-child-width-1-5@m uk-text-center" data-uk-grid>
-                            <li>
-                                <img src="img/in-lazy.gif" data-src="img/in-liquid-ticker-1.svg" alt="ticker-image" data-width data-height data-uk-img>
-                                <span class="uk-label uk-label-success uk-margin-left"><i class="fas fa-caret-up"></i>1,740.05</span>
+                            <center>
+                            <li style="background-color: #2F237C">
+                                <img src="img/in-lazy.gif" data-src="img/icons.png" alt="get register" data-width data-height data-uk-img style="width: 100px"><br>
+                                <h4>Get Register</h4>
                             </li>
-                            <li>
-                                <img src="img/in-lazy.gif" data-src="img/in-liquid-ticker-2.svg" alt="ticker-image" data-width data-height data-uk-img>
-                                <span class="uk-label uk-label-success uk-margin-left"><i class="fas fa-caret-up"></i>217.90</span>
+                        </center>
+                            
+                            <center>
+                            <li style="background-color: #2F237C">
+                                <img src="img/in-lazy.gif" data-src="img/plan.png" alt="get register" data-width data-height data-uk-img style="width: 100px"><br>
+                                <h4>Plan Investment</h4>
                             </li>
-                            <li>
-                                <img src="img/in-lazy.gif" data-src="img/in-liquid-ticker-3.svg" alt="ticker-image" data-width data-height data-uk-img>
-                                <span class="uk-label uk-label-danger uk-margin-left"><i class="fas fa-caret-down"></i>270.97</span>
+                          </center>
+
+                            <center>
+                            <li style="background-color: #2F237C">
+                                <img src="img/in-lazy.gif" data-src="img/software.png" alt="get register" data-width data-height data-uk-img style="width: 100px"><br>
+                                <h4>ATB Work</h4>
                             </li>
-                            <li>
-                                <img src="img/in-lazy.gif" data-src="img/in-liquid-ticker-4.svg" alt="ticker-image" data-width data-height data-uk-img>
-                                <span class="uk-label uk-label-success uk-margin-left"><i class="fas fa-caret-up"></i>3,218.51</span>
+                          </center>
+
+                            <center>
+                            <li style="background-color: #2F237C">
+                                <img src="img/in-lazy.gif" data-src="img/sit.png" alt="get register" data-width data-height data-uk-img style="width: 100px"><br>
+                                <h4>Relax now</h4>
                             </li>
-                            <li>
-                                <img src="img/in-lazy.gif" data-src="img/in-liquid-ticker-5.svg" alt="ticker-image" data-width data-height data-uk-img>
-                                <span class="uk-label uk-label-danger uk-margin-left"><i class="fas fa-caret-down"></i>735.11</span>
+                          </center>
+
+                           <center>
+                            <li style="background-color: #2F237C">
+                                <img src="img/in-lazy.gif" data-src="img/grow.png" alt="get register" data-width data-height data-uk-img style="width: 100px"><br>
+                                <h4>Earn more</h4>
                             </li>
+                          </center>
+
                         </ul>
                     </div>
                 </div>
@@ -233,14 +268,7 @@
         <!-- section content begin -->
         <div class="uk-section uk-section-secondary in-liquid-1" id="about">
             <div class="uk-container uk-light">
-                <div class="uk-grid uk-flex uk-flex-middle">
-                    <div class="uk-width-1-2@m">
-                        <h2 style="color: black">Save time. Get <span class="in-highlight">higher return</span>. Multiply wealth.</h2>
-                    </div>
-                    <div class="uk-width-1-2@m">
-                        <a class="uk-button uk-button-danger uk-border-rounded uk-align-right@m" href="#">Find out more<i class="fas fa-angle-right uk-margin-small-left"></i></a>
-                    </div>
-                </div>
+                
                 <div class="uk-child-width-1-3@m" data-uk-grid>
                     <div>
                         <div class="uk-card uk-card-secondary uk-border-rounded uk-cover-container">
@@ -251,8 +279,8 @@
                             </div>
                             <div class="uk-card-body" style="border:1px dotted skyblue">
                                 <br>
-                                <h3 style="color: black">Who Are We?</h3>
-                                <p style="color: black;font-size: 19px;">We provide a platform to implement your trading strategies. Tell us when to enter, what should be the SL logic, when to exit and we translate all these components into an algorithm and execute the same for you. All you need to do is authorize once and monitor your growth.</p>
+                                <h3 style="color: #FFF">Who Are We?</h3>
+                                <p style="color: #FFF;font-size: 19px;">We provide a platform to implement your trading strategies. Tell us when to enter, what should be the SL logic, when to exit and we translate all these components into an algorithm and execute the same for you. All you need to do is authorize once and monitor your growth.</p>
                             </div>
                         </div>
                     </div>
@@ -265,14 +293,14 @@
                             </div>
                             <div class="uk-card-body" style="border:1px dotted skyblue">
                                 <br>
-                                <h3 style="color: black">What products do we deal in?</h3>
-                                <h4 style="color: black;font-size: 22px">Options Intraday</h4>
+                                <h3 style="color: #FFF">What products do we deal in?</h3>
+                                <h4 style="color: #FFF;font-size: 22px">Options Intraday</h4>
                                 <ul>
-                                    <li style="color: black;font-size: 19px">Buying Strategies</li>
-                                    <li style="color: black;font-size: 19px">Selling Strategies</li>
+                                    <li style="color: #FFF;font-size: 19px">Buying Strategies</li>
+                                    <li style="color: #FFF;font-size: 19px">Selling Strategies</li>
                                 </ul>
-                                <h4 style="color: black;font-size: 22px">Equity Swing Trading</h4>
-                                <p style="color: black;font-size: 19px">Enter and exit certain stocks based on market analysis and many more to come.</p>
+                                <h4 style="color: #FFF;font-size: 22px">Equity Swing Trading</h4>
+                                <p style="color: #FFF;font-size: 19px">Enter and exit certain stocks based on market analysis and many more to come.</p>
 
                             </div>
                         </div>
@@ -284,8 +312,8 @@
                             </div>
                             <div class="uk-card-body" style="border:1px dotted skyblue">
                                 <br>
-                                <h3 style="color: black">Why Us?</h3>
-                                <p style="color: black;font-size: 19px">Apart from providing a platform to implement your strategies, we also spend a considerable amount of time identifying new strategies based on your budget and risk appetite.</p>
+                                <h3 style="color: #FFF">Why Us?</h3>
+                                <p style="color: #FFF;font-size: 19px">Apart from providing a platform to implement your strategies, we also spend a considerable amount of time identifying new strategies based on your budget and risk appetite.</p>
                             </div>
                         </div>
                     </div>
@@ -294,7 +322,7 @@
         </div>
         <!-- section content end -->
         <!-- section content begin -->
-        <div class="uk-section in-liquid-2" id="strategy">
+        <div class="uk-section in-liquid-2" id="strategy" style="background-color: #2F237C">
             <div class="uk-container">
                 <div class="uk-grid-large uk-child-width-1-2@m" data-uk-grid>
                     <div class="uk-flex uk-flex-left">
@@ -303,8 +331,7 @@
                         </div>
                         <div>
                             <h3>Expert service</h3>
-                            <p>Based on market analysis we gain trading strategies to our clients.</p>
-                            <a class="uk-button uk-button-text" href="#">Learn more<i class="fas fa-long-arrow-alt-right uk-margin-small-left"></i></a>
+                            <p style="font-size: 19px">Algorithmic trading automates the trading function which is incredibly advantageous to traders, which makes sure that the trades are carried out at the right time during optimal market conditions which increases the chances of high returns. The traders do not face the risk of missing out on important opportunities in the market.</p>
                         </div>
                     </div>
                     <div class="uk-flex uk-flex-left">
@@ -313,8 +340,7 @@
                         </div>
                         <div>
                             <h3>Strategy 1 – Buying</h3>
-                            <p>This is a “risk and reward” based strategy where you can invest a minimum of Rs. 3000. When the market is in favor you can make up to 300% in a day. However there is always some risk associated with trading. To avoid it considerably though, we max our SL at 40 points here, which eventually translates to a loss of Rs. 1500/- for an investment of Rs. 3000/-</p>
-                            <a class="uk-button uk-button-text" href="#">Learn more<i class="fas fa-long-arrow-alt-right uk-margin-small-left"></i></a>
+                            <p style="font-size: 19px">This is a “risk and reward” based strategy where you can invest a minimum of Rs. 3000. When the market is in favor you can make up to 300% in a day. However there is always some risk associated with trading. To avoid it considerably though, we max our SL at 40 points here, which eventually translates to a loss of Rs. 1500/- for an investment of Rs. 3000/-</p>
                         </div>
                     </div>
                     <div class="uk-flex uk-flex-left">
@@ -323,8 +349,7 @@
                         </div>
                         <div>
                             <h3>Strategy 2 - Selling</h3>
-                            <p>This is a “low-risk” strategy where risk is very low and profits are also capped at 1%. We exit at 1% leaving no room for emotions. To be able to yield consistent and considerable profit, we recommend a minimum investment of Rs 150,000/-</p>
-                            <a class="uk-button uk-button-text" href="#">Learn more<i class="fas fa-long-arrow-alt-right uk-margin-small-left"></i></a>
+                            <p style="font-size: 19px">This is a “low-risk” strategy where risk is very low and profits are also capped at 1%. We exit at 1% leaving no room for emotions. To be able to yield consistent and considerable profit, we recommend a minimum investment of Rs 150,000/-</p>
                         </div>
                     </div>
                     <div class="uk-flex uk-flex-left">
@@ -332,31 +357,42 @@
                             <img src="img/in-lazy.gif" data-src="img/in-liquid-icon-4.svg" alt="sample-icon" width="128" height="128" data-uk-img>
                         </div>
                         <div>
-                            <h3>Integrated support</h3>
-                            <p>24 * 7 online support</p>
-                            <a class="uk-button uk-button-text" href="#">Learn more<i class="fas fa-long-arrow-alt-right uk-margin-small-left"></i></a>
+                            <h3>Minimize Human Errors</h3>
+                            <p style="font-size: 19px">Every active trader loses money to manual errors like punching wrong order quantity, wrong order price or sending the order in the wrong scrip. ATB platform minimizes such errors & save time to analyze right trade to invest.</p>
                         </div>
                     </div>
                 </div>
                 <div class="uk-grid uk-flex uk-flex-center">
                     <div class="uk-width-5-6@m uk-margin-medium-top">
-                        <div class="uk-card uk-card-default uk-card-body uk-background-contain uk-background-top-left" style="background-image: url(img/in-liquid-card-bg.png);" data-uk-img>
+                        <div class="uk-card uk-card-default  uk-background-contain uk-background-top-left" data-uk-img>
                             <div class="uk-grid uk-child-width-1-3@s uk-child-width-1-3@m uk-text-center" data-uk-grid>
-                                <div class="uk-width-1-1">
-                                    <h4><span>Simple steps to start trade.</span></h4>
+                                <div class="uk-width">
+                                    <h4><span>Benefits for Algo Trading</span></h4>
                                 </div>
-                                <div>
-                                    <span class="in-icon-wrap circle">1</span>
-                                    <p>Register account</p>
+                                
+                                <center>
+                                <div style="background-color: #2F237C"  class="spin1">
+                                    <img src="img/engagement.png" width="200px">
+                                    <caption><span style="color: #FFF;font-size: 20px">Algorithmic Trading</span></caption>
+                                    <br><br>
                                 </div>
-                                <div>
-                                    <span class="in-icon-wrap circle">2</span>
-                                    <p>Fund your account</p>
+                            </center>
+
+                                <center>
+                                <div style="background-color: #2F237C"  class="spin1">
+                                    <img src="img/save.png" width="200px">
+                                    <caption><span style="color: #FFF;font-size: 20px">Save time</span></caption>
+                                    <br><br>
                                 </div>
-                                <div>
-                                    <span class="in-icon-wrap circle">3</span>
-                                    <p>Start your trade</p>
+                             </center>
+
+                                <center>
+                                <div style="background-color: #2F237C"  class="spin1">
+                                    <img src="img/time.png" width="200px">
+                                    <caption><span style="color: #FFF;font-size: 20px">Speed</span></caption>
+                                    <br><br>
                                 </div>
+                            </center>
                             </div>
                         </div>
                     </div>
@@ -364,616 +400,30 @@
             </div>
         </div>
         <!-- section content end -->
-        <!-- section content begin -->
-        <div class="uk-section uk-section-muted uk-padding-large in-liquid-3 uk-background-contain uk-background-center-center" style="background-image: url(img/in-liquid-3-bg.png);" data-uk-img>
-            <div class="uk-container">
-                <div class="uk-grid uk-flex uk-flex-center">
-                    <div class="uk-width-5-6@m uk-inline">
-                        <div class="uk-grid-large uk-flex uk-flex-middle uk-flex-right" data-uk-grid>
-                            <div class="uk-position-top-left">
-                               <h5>ATB Charges</h5>
-                               <ul>
-                                   <li>if Profit is less than 5000 INR = 0 INR</li>
-                                  <li>More than 5000 INR and less than 7000 INR = 2000 INR</li>
-                                  <li>More than 7000 INR and less than 20000 INR = 3000 INR</li>
-                                  <li>More than 20000 INR and less than 40000 INR = 4000 INR</li>
-                                  <li>More than 40000 INR and less than 50000 INR = 5000 INR</li>
-                                  <li>More than 50000 INR = 10% of profit.</li>
-                               </ul>
-                            </div>
 
-                            <div class="uk-width-1-2@m">
-                                <br>
-                                <div class="uk-grid-small uk-child-width-1-3 uk-child-width-1-4@m uk-margin-medium-top uk-text-center" data-uk-grid>
-                                    <iframe style="width: 100%" src="https://www.youtube.com/embed/C3ziReuhl4Q" title="Trading Forex Indices Stock Investment Super Promo Video & Commercial" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+        <div style="clear: both;"></div>
+        
         <br>
         <div class="container-fluid">
-            <div class="table-responsive">
-                <table class="table table-bordered">
-                     <thead>
-                    <tr>
-                    <th>Lot Size</th>
-                    <th>Quantity</th>
-                    <th>Investment</th>
-                    <th>Trading Days</th>
-                    <th>Profit (assume 5%)</th>
-                    <th>API charges</th>
-                    <th>Tax and other charges</th>
-                    <th>Profit before ATB Charges</th>
-                    <th>ATB Charges</th>
-                    <th>Final Profit</th>
-                </tr>
-    
-                <tr>
-                    <td>1</td>
-                    <td>25</td>
-                    <td>2500</td>
-                    <td>20</td>
-                    <td>2500</td>
-                    <td>2000</td>
-                    <td>158</td>
-                    <td>342</td>
-                    <td>0</td>
-                    <td>342</td>
-                </tr> 
+          <div class="row">
+            <div class="col-md-6">
+               <img src="img/vision.png" class="img-responsive">
+            </div>
 
-                <tr>
-                    <td>2</td>
-                    <td>50</td>
-                    <td>5000</td>
-                    <td>20</td>
-                    <td>5000</td>
-                    <td>2000</td>
-                    <td>317</td>
-                    <td>2683</td>
-                    <td>0</td>
-                    <td>2683</td>
-                </tr> 
-
-                <tr>
-                    <td>3</td>
-                    <td>75</td>
-                    <td>7500</td>
-                    <td>20</td>
-                    <td>7500</td>
-                    <td>2000</td>
-                    <td>475</td>
-                    <td>5025</td>
-                    <td>2000</td>
-                    <td>3025</td>
-                </tr> 
-
-                <tr>
-                    <td>4</td>
-                    <td>100</td>
-                    <td>10000</td>
-                    <td>20</td>
-                    <td>10000</td>
-                    <td>2000</td>
-                    <td>633</td>
-                    <td>7367</td>
-                    <td>3000</td>
-                    <td>4367</td>
-                </tr> 
-
-                <tr>
-                    <td>5</td>
-                    <td>125</td>
-                    <td>12500</td>
-                    <td>20</td>
-                    <td>12500</td>
-                    <td>2000</td>
-                    <td>791</td>
-                    <td>9709</td>
-                    <td>3000</td>
-                    <td>6709</td>
-                </tr> 
-
-                 <tr>
-                    <td>6</td>
-                    <td>150</td>
-                    <td>15000</td>
-                    <td>20</td>
-                    <td>15000</td>
-                    <td>2000</td>
-                    <td>950</td>
-                    <td>12050</td>
-                    <td>3000</td>
-                    <td>9050</td>
-                </tr> 
-
-
-                <tr>
-                    <td>7</td>
-                    <td>175</td>
-                    <td>17500</td>
-                    <td>20</td>
-                    <td>17500</td>
-                    <td>2000</td>
-                    <td>1108</td>
-                    <td>14392</td>
-                    <td>3000</td>
-                    <td>11392</td>
-                </tr> 
-
-
-                <tr>
-                    <td>8</td>
-                    <td>200</td>
-                    <td>20000</td>
-                    <td>20</td>
-                    <td>20000</td>
-                    <td>2000</td>
-                    <td>1266</td>
-                    <td>16734</td>
-                    <td>3000</td>
-                    <td>13734</td>
-                </tr> 
-
-                 <tr>
-                    <td>9</td>
-                    <td>225</td>
-                    <td>22500</td>
-                    <td>20</td>
-                    <td>22500</td>
-                    <td>2000</td>
-                    <td>1424</td>
-                    <td>19076</td>
-                    <td>3000</td>
-                    <td>16076</td>
-                </tr> 
-
-                <tr>
-                    <td>10</td>
-                    <td>250</td>
-                    <td>25000</td>
-                    <td>20</td>
-                    <td>25000</td>
-                    <td>2000</td>
-                    <td>1583</td>
-                    <td>21417</td>
-                    <td>4000</td>
-                    <td>17417</td>
-                </tr> 
-
-                <tr>
-                    <td>11</td>
-                    <td>275</td>
-                    <td>27500</td>
-                    <td>20</td>
-                    <td>27500</td>
-                    <td>2000</td>
-                    <td>1741</td>
-                    <td>23759</td>
-                    <td>4000</td>
-                    <td>19759</td>
-                </tr>
-
-                 <tr>
-                    <td>12</td>
-                    <td>300</td>
-                    <td>30000</td>
-                    <td>20</td>
-                    <td>30000</td>
-                    <td>2000</td>
-                    <td>1899</td>
-                    <td>26101</td>
-                    <td>4000</td>
-                    <td>22101</td>
-                </tr>
-
-                <tr>
-                    <td>13</td>
-                    <td>325</td>
-                    <td>32500</td>
-                    <td>20</td>
-                    <td>32500</td>
-                    <td>2000</td>
-                    <td>2057</td>
-                    <td>28443</td>
-                    <td>4000</td>
-                    <td>24443</td>
-                </tr>
-
-                <tr>
-                    <td>14</td>
-                    <td>350</td>
-                    <td>35000</td>
-                    <td>20</td>
-                    <td>35000</td>
-                    <td>2000</td>
-                    <td>2216</td>
-                    <td>30784</td>
-                    <td>4000</td>
-                    <td>26784</td>
-                </tr>
-
-                 <tr>
-                    <td>15</td>
-                    <td>375</td>
-                    <td>37500</td>
-                    <td>20</td>
-                    <td>37500</td>
-                    <td>2000</td>
-                    <td>2374</td>
-                    <td>33126</td>
-                    <td>4000</td>
-                    <td>29126</td>
-                </tr>
-
-                <tr>
-                    <td>16</td>
-                    <td>400</td>
-                    <td>40000</td>
-                    <td>20</td>
-                    <td>40000</td>
-                    <td>2000</td>
-                    <td>2532</td>
-                    <td>35468</td>
-                    <td>4000</td>
-                    <td>31468</td>
-                </tr>
-
-                 <tr>
-                    <td>17</td>
-                    <td>425</td>
-                    <td>42500</td>
-                    <td>20</td>
-                    <td>42500</td>
-                    <td>2000</td>
-                    <td>2690</td>
-                    <td>37810</td>
-                    <td>4000</td>
-                    <td>33810</td>
-                </tr>
-
-                  <tr>
-                    <td>18</td>
-                    <td>450</td>
-                    <td>45000</td>
-                    <td>20</td>
-                    <td>45000</td>
-                    <td>2000</td>
-                    <td>2849</td>
-                    <td>40151</td>
-                    <td>5000</td>
-                    <td>35151</td>
-                </tr>
-
-                 <tr>
-                    <td>19</td>
-                    <td>475</td>
-                    <td>47500</td>
-                    <td>20</td>
-                    <td>47500</td>
-                    <td>2000</td>
-                    <td>3007</td>
-                    <td>42493</td>
-                    <td>5000</td>
-                    <td>37493</td>
-                </tr>
-
-                <tr>
-                    <td>20</td>
-                    <td>500</td>
-                    <td>50000</td>
-                    <td>20</td>
-                    <td>50000</td>
-                    <td>2000</td>
-                    <td>3165</td>
-                    <td>44835</td>
-                    <td>5000</td>
-                    <td>39835</td>
-                </tr>
-
-                 <tr>
-                    <td>21</td>
-                    <td>525</td>
-                    <td>52500</td>
-                    <td>20</td>
-                    <td>52500</td>
-                    <td>2001</td>
-                    <td>3323</td>
-                    <td>47176</td>
-                    <td>5000</td>
-                    <td>42176</td>
-                </tr>
-
-                 <tr>
-                    <td>22</td>
-                    <td>550</td>
-                    <td>55000</td>
-                    <td>20</td>
-                    <td>55000</td>
-                    <td>2002</td>
-                    <td>3482</td>
-                    <td>49516</td>
-                    <td>5000</td>
-                    <td>44516</td>
-                </tr>
-
-                 <tr>
-                    <td>23</td>
-                    <td>575</td>
-                    <td>57500</td>
-                    <td>20</td>
-                    <td>57500</td>
-                    <td>2003</td>
-                    <td>3640</td>
-                    <td>51857</td>
-                    <td>5186</td>
-                    <td>46671</td>
-                </tr>
-
-                <tr>
-                    <td>24</td>
-                    <td>600</td>
-                    <td>60000</td>
-                    <td>20</td>
-                    <td>60000</td>
-                    <td>2004</td>
-                    <td>3798</td>
-                    <td>54198</td>
-                    <td>5420</td>
-                    <td>48778</td>
-                </tr>
-
-                <tr>
-                    <td>25</td>
-                    <td>625</td>
-                    <td>62500</td>
-                    <td>20</td>
-                    <td>62500</td>
-                    <td>2005</td>
-                    <td>3957</td>
-                    <td>56539</td>
-                    <td>5654</td>
-                    <td>50885</td>
-                </tr>
-
-                <tr>
-                    <td>26</td>
-                    <td>650</td>
-                    <td>65000</td>
-                    <td>20</td>
-                    <td>65000</td>
-                    <td>2006</td>
-                    <td>4115</td>
-                    <td>58879</td>
-                    <td>5888</td>
-                    <td>52991</td>
-                </tr>
-
-                <tr>
-                    <td>27</td>
-                    <td>675</td>
-                    <td>67500</td>
-                    <td>20</td>
-                    <td>67500</td>
-                    <td>2007</td>
-                    <td>4273</td>
-                    <td>61220</td>
-                    <td>6122</td>
-                    <td>55098</td>
-                </tr>
-
-                <tr>
-                    <td>28</td>
-                    <td>700</td>
-                    <td>70000</td>
-                    <td>20</td>
-                    <td>70000</td>
-                    <td>2008</td>
-                    <td>4431</td>
-                    <td>63561</td>
-                    <td>6356</td>
-                    <td>57205</td>
-                </tr>
-
-                <tr>
-                    <td>29</td>
-                    <td>725</td>
-                    <td>72500</td>
-                    <td>20</td>
-                    <td>72500</td>
-                    <td>2009</td>
-                    <td>4590</td>
-                    <td>65901</td>
-                    <td>6590</td>
-                    <td>59311</td>
-                </tr>
-
-                <tr>
-                    <td>30</td>
-                    <td>750</td>
-                    <td>75000</td>
-                    <td>20</td>
-                    <td>75000</td>
-                    <td>2010</td>
-                    <td>4748</td>
-                    <td>68242</td>
-                    <td>6824</td>
-                    <td>61418</td>
-                </tr>
-
-                 <tr>
-                    <td>31</td>
-                    <td>775</td>
-                    <td>77500</td>
-                    <td>20</td>
-                    <td>77500</td>
-                    <td>2011</td>
-                    <td>4906</td>
-                    <td>70583</td>
-                    <td>7058</td>
-                    <td>63525</td>
-                </tr>
-
-                <tr>
-                    <td>32</td>
-                    <td>800</td>
-                    <td>80000</td>
-                    <td>20</td>
-                    <td>80000</td>
-                    <td>2012</td>
-                    <td>5064</td>
-                    <td>72924</td>
-                    <td>7292</td>
-                    <td>65631</td>
-                </tr>
-
-                <tr>
-                    <td>33</td>
-                    <td>825</td>
-                    <td>82500</td>
-                    <td>20</td>
-                    <td>82500</td>
-                    <td>2013</td>
-                    <td>5223</td>
-                    <td>75264</td>
-                    <td>7526</td>
-                    <td>67738</td>
-                </tr>
-
-                 <tr>
-                    <td>34</td>
-                    <td>850</td>
-                    <td>85000</td>
-                    <td>20</td>
-                    <td>85000</td>
-                    <td>2014</td>
-                    <td>5381</td>
-                    <td>77605</td>
-                    <td>7761</td>
-                    <td>69845</td>
-                </tr>
-
-                <tr>
-                    <td>35</td>
-                    <td>875</td>
-                    <td>87500</td>
-                    <td>20</td>
-                    <td>87500</td>
-                    <td>2014</td>
-                    <td>5539</td>
-                    <td>79947</td>
-                    <td>7995</td>
-                    <td>71952</td>
-                </tr>
-                </table>
+             <div class="col-md-6">
+                <br>
+               <h2>The Perfect Solution For Your Trading</h2>
+               <p>We teach everyone how to trade when to trade and what to trade in which situation. That can provide everything you need to generate awareness, drive traffic, connect.</p>
+               <img src="img/smart.png" class="img-responsive">
             </div>
 
         </div>
+    </div>
+
 
         <!-- section content end -->
         <!-- section content begin -->
-        <div class="uk-section in-liquid-4">
-            <div class="uk-container">
-                <div class="uk-grid uk-flex uk-flex-middle">
-                    <div class="uk-widtd-1-2@m">
-                        <h2>Stay ahead of the curved.</h2>
-                    </div>
-                    <div class="uk-width-1-2@m uk-visible@m">
-                        <a class="uk-button uk-button-text uk-align-right@m" href="#">Show all<i class="fas fa-angle-right uk-margin-small-left"></i></a>
-                    </div>
-                </div>
-                <div class="uk-grid uk-child-width-1-2@s uk-child-width-1-3@m in-blog-4" data-uk-grid>
-                    <div class="uk-flex uk-flex-left">
-                        <div class="in-liquid-category">
-                            <p class="uk-text-small uk-text-uppercase"><span>News</span></p>
-                        </div>
-                        <div>
-                            <article class="uk-article">
-                                <h5 class="uk-margin-remove-bottom">
-                                    <a href="#">Stock Market Title</a>
-                                </h5>
-                                <p class="uk-text-small uk-text-muted uk-margin-top">
-                                    By <a href="#">Author Name</a>
-                                    <span class="uk-margin-small-left uk-margin-small-right">•</span>
-                                    Aug 30, 2022
-                                </p>
-                                <p>Short Description of Stock Market News 1</p>
-                                <a class="uk-button uk-button-text uk-margin-top" href="#">Read more<i class="fas fa-long-arrow-alt-right uk-margin-small-left"></i></a>
-                            </article>
-                        </div>
-                    </div>
-                    <div class="uk-flex uk-flex-left">
-                        <div class="in-liquid-category">
-                            <p class="uk-text-small uk-text-uppercase"><span>Analysis</span></p>
-                        </div>
-                        <div>
-                            <article class="uk-article">
-                                <h5 class="uk-margin-remove-bottom">
-                                    <a href="#">News Title 2</a>
-                                </h5>
-                                <p class="uk-text-small uk-text-muted uk-margin-top">
-                                    By <a href="#">Author Name</a>
-                                    <span class="uk-margin-small-left uk-margin-small-right">•</span>
-                                    Sept 1, 2022
-                                </p>
-                                <p>Short Descriptions of News 2</p>
-                                <a class="uk-button uk-button-text uk-margin-top" href="#">Read more<i class="fas fa-long-arrow-alt-right uk-margin-small-left"></i></a>
-                            </article>
-                        </div>
-                    </div>
-                    <div class="uk-flex uk-flex-left uk-visible@m">
-                        <div class="in-liquid-category">
-                            <p class="uk-text-small uk-text-uppercase"><span>Learning</span></p>
-                        </div>
-                        <div>
-                            <article class="uk-article">
-                                <h5 class="uk-margin-remove-bottom">
-                                    <a href="#">How Can You Use Volatility to Your Advantage</a>
-                                </h5>
-                                <p class="uk-text-small uk-text-muted uk-margin-top">
-                                    By <a href="#">Author Name</a>
-                                    <span class="uk-margin-small-left uk-margin-small-right">•</span>
-                                    Spet 2, 2022
-                                </p>
-                                <p>Advantage gain by ALGO TRADING BOT</p>
-                                <a class="uk-button uk-button-text uk-margin-top" href="#">Read more<i class="fas fa-long-arrow-alt-right uk-margin-small-left"></i></a>
-                            </article>
-                        </div>
-                    </div>
-                </div>
-                <div class="uk-grid uk-flex uk-flex-center">
-                    <div class="uk-width-5-6@m uk-inline">
-                        <div class="uk-grid-medium uk-child-width-1-3@s uk-child-width-1-4@m uk-text-center uk-margin-medium-top" data-uk-grid>
-                            <div>
-                                <img src="img/in-lazy.gif" data-src="img/in-liquid-award.svg" alt="wave-award" width="71" height="58" data-uk-img>
-                                <h6 class="uk-margin-small-top uk-margin-remove-bottom">Best CFD Broker</h6>
-                                <p class="uk-text-small uk-margin-remove-top">TradeON Summit 2020</p>
-                            </div>
-                            <div>
-                                <img src="img/in-lazy.gif" data-src="img/in-liquid-award.svg" alt="wave-award" width="71" height="58" data-uk-img>
-                                <h6 class="uk-margin-small-top uk-margin-remove-bottom">Best Execution Broker</h6>
-                                <p class="uk-text-small uk-margin-remove-top">Forex EXPO Dubai 2020</p>
-                            </div>
-                            <div>
-                                <img src="img/in-lazy.gif" data-src="img/in-liquid-award.svg" alt="wave-award" width="71" height="58" data-uk-img>
-                                <h6 class="uk-margin-small-top uk-margin-remove-bottom">Best Trading Platform</h6>
-                                <p class="uk-text-small uk-margin-remove-top">London Summit 2020</p>
-                            </div>
-                            <div class="uk-visible@m">
-                                <img src="img/in-lazy.gif" data-src="img/in-liquid-award.svg" alt="wave-award" width="71" height="58" data-uk-img>
-                                <h6 class="uk-margin-small-top uk-margin-remove-bottom">Best Broker Asia</h6>
-                                <p class="uk-text-small uk-margin-remove-top">iFX EXPO 2020</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- section content end -->
-        <!-- section content begin -->
-        <div class="uk-section uk-section-muted in-liquid-5 uk-background-contain uk-background-top-center in-offset-bottom-40" style="background-image: url(img/in-liquid-5-bg.png);">
+        <div class="uk-section uk-section-muted in-liquid-5 uk-background-contain uk-background-top-center in-offset-bottom-40" style="background-image: url(img/in-liquid-5-bg.png);background-color: #2F237C">
             <div class="uk-container">
                 <div class="uk-grid uk-flex uk-flex-center">
                     <div class="uk-width-5-6@m">
@@ -1011,7 +461,7 @@
     </main>
     <footer>
         <!-- footer content begin -->
-        <div class="uk-section uk-section-secondary in-footer-feature uk-margin-medium-top" style="background-color: black">
+        <div class="uk-section uk-section-secondary in-footer-feature uk-margin-medium-top" style="background-color: #2F237C">
             <div class="uk-container">
                 <div class="uk-grid uk-flex uk-flex-center">
                     <div class="uk-width-5-6@m">
@@ -1045,7 +495,7 @@
                 </div>
             </div>
         </div>
-        <div class="uk-section uk-background-secondary uk-light">
+        <div class="uk-section uk-background-secondary uk-light" style="background-color: #2F237C">
             <div class="uk-container uk-text-small">
                 <div class="uk-child-width-1-2@m" data-uk-grid>
                     <div class="in-footer-logo">

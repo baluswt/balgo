@@ -8404,7 +8404,7 @@ readers do not read off random characters that represent icons */
 }
 
 .in-liquid-2 {
-    background: linear-gradient(0deg, rgba(255, 255, 255, 0) 55%, #ffefec 100%);
+    /*background: linear-gradient(0deg, rgba(255, 255, 255, 0) 55%, #ffefec 100%);*/
 }
 
 .in-liquid-2 .uk-container {
