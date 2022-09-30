@@ -58,12 +58,12 @@
 }
 
 .pricing5 .pricing-box .middle-box .general-listing {
-  margin-top: 60px;
+  margin-top: 20px;
 }
 
 @media (max-width: 767px) {
   .pricing5 .pricing-box {
-    margin-top: 40px;
+    margin-top: 20px;
   }
   .pricing5 .pricing-box .middle-box {
     margin-top: 0px;
