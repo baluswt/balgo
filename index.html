@@ -28,9 +28,15 @@
     <!-- CSS -->
     <link rel="stylesheet" href="css2/vendors/uikit.min.css">
     <link rel="stylesheet" href="css2/style.css">
-     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.0/css/bootstrap.min.css">
      <!-- Latest compiled and minified CSS -->
      <link rel="stylesheet" type="text/css" href="card.css">
+
+     <!-- bootstrap cdn CSS-->
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+     <!-- js -->
+     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
      <script src="js/angular.min.js"></script>
      <script src="js/angular-route.js"></script>
@@ -407,15 +413,51 @@ h1,h2,h3,h4,h5{
         <br>
         <div class="container-fluid">
           <div class="row">
+           
             <div class="col-md-6">
-               <img src="img/vision.png" class="img-responsive">
+                <div class="hovereffect">
+                   <img src="img/vision.png" class="img-responsive">
+                    <div class="overlay">
+                       <h2>What We Do</h2>
+                       <br><br>
+                       <h3>Automated Trading</h3>
+                        <p>We can turn exact passage, exit, and cash the rules into
+                            computerized exchanging frameworks that permit PCs to execute
+                            and screen the exchanges to perform back testing, Improving Order
+                            Entry Speed and Diversify Trading.</p>
+
+                            <h3>Backtesting</h3>
+                            <p>One of the biggest advantages of using machines for trading is the fact
+                                 that it makes things systematic, hence enabling the possibility 
+                                 to perform backtesting more comprehensively.</p>
+
+                                 <h3>Marketdepth</h3>
+                                 <p>Watch real-time stocks list displaying the quantity to be sold versus unit price.</p>
+                            
+                            <h3>Auto buy and sell signals</h3>
+                            <p>Lets trade quicker and Profitable, Get auto buy and sell signals with
+                                best entry and exit levels without any delay. On the basis of moving
+                                averages.</p>   
+                    </div>
+                 </div>
             </div>
 
              <div class="col-md-6">
                 <br>
                <h2>The Perfect Solution For Your Trading</h2>
                <p>We teach everyone how to trade when to trade and what to trade in which situation. That can provide everything you need to generate awareness, drive traffic, connect.</p>
+               <div class="hovereffect">
                <img src="img/smart.png" class="img-responsive">
+               <div class="overlay">
+                <h2>How ATB is different?</h2>
+                <p>Algo Trading Bot (ATB) is a fastest growing platfrom in providing<br>
+                     various services for small, medium and high net worth <br> 
+                     clients, Traders , investors and technical analysts<br>
+                      and we have been choose by many independent researchers<br>
+                     and people related to the market.</p>
+                     
+                     <img src="img/atb.jpg" class="img-responsive" style="width:100%">
+              </div>
             </div>
         </div>
 
@@ -563,6 +605,110 @@ h1,h2,h3,h4,h5{
      </div>
         <!-- contanier fluid end -->
     </div>
+    <!-- Accordion -->
+    <div class="container-fluid bg-gray" id="accordion-style-1">
+	<div class="container">
+		<section>
+			<div class="row">
+				<div class="col-12">
+					<h1 class="text-white mb-4 text-center">Frequently Asked Questions</h1>
+				</div>
+				<div class="col-10 mx-auto">
+					<div class="accordion" id="accordionExample">
+						<div class="card" style="background-color:#2F237C; ">
+							<div class="card-header" id="headingOne">
+								<h5 class="mb-0">
+							<button class="btn btn-default btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+							  <i class="fa fa-question-circle"></i>&nbsp;What is Automated Trading?
+                              <i class="fa fa-chevron-up mr-3" style="float:right"></i>
+							</button>
+						  </h5>
+							</div>
+
+							<div id="collapseOne" class="collapse show fade" aria-labelledby="headingOne" data-parent="#accordionExample">
+								<div class="card-body" style="color:white">
+									Automated trading is a trading plan based on buy and sell orders that are automatically placed based on an underlying system or program. 
+                                    The buy or sell orders are placed when the trade conditions in the underlying system or program are met.
+								</div>
+							</div>
+						</div>
+						
+                        <div class="card" style="background-color: #2F237C">
+							<div class="card-header" id="headingTwo">
+								<h5 class="mb-0">
+                                    <button class="btn btn-default btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                        <i class="fa fa-question-circle"></i>&nbsp;What are features our platform provides?
+                                        <i class="fa fa-chevron-up mr-3" style="float:right"></i>
+                                      </button>
+						        </h5>
+							</div>
+							<div id="collapseTwo" class="collapse fade" aria-labelledby="headingTwo" data-parent="#accordionExample">
+								<div class="card-body" style="color:#FFF">
+									We provides algo for Nifty and BankNifty Options.
+								</div>
+							</div>
+						</div>
+
+						<div class="card" style="background-color: #2F237C">
+							<div class="card-header" id="headingThree">
+								<h5 class="mb-0">
+							<button class="btn btn-default collapsed btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                <i class="fa fa-question-circle"></i>&nbsp;Do I require coding knowledge for creating strategies?
+                                <i class="fa fa-chevron-up mr-3" style="float:right"></i>
+							</button>
+						  </h5>
+							</div>
+
+							<div id="collapseThree" class="collapse fade" aria-labelledby="headingThree" data-parent="#accordionExample">
+								<div class="card-body" style="color: #FFF">
+									No,you don't need coding knowledge for creating strategies.
+								</div>
+							</div>
+						</div>
+
+						<div class="card" style="background-color: #2F237C">
+							<div class="card-header" id="headingFour">
+								<h5 class="mb-0">
+							<button class="btn btn-default collapsed btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                <i class="fa fa-question-circle"></i>&nbsp;What are slippages through our platform?
+                                <i class="fa fa-chevron-up mr-3" style="float:right"></i>
+							</button>
+						  </h5>
+							</div>
+							
+                            <div id="collapseFour" class="collapse fade" aria-labelledby="headingFour" data-parent="#accordionExample">
+								<div class="card-body"  style="color: #FFF">
+									We have very less slippages, our platform execute order exact on time which you have configured(Max 1 sec delay can happen). So whenever order get trigger then on same time it'll place stop loss order into broker system and algo keep track on SL.
+								</div>
+							</div>
+						</div>
+
+                        <div class="card" style="background-color: #2F237C">
+							<div class="card-header" id="headingFive">
+								<h5 class="mb-0">
+							<button class="btn btn-default collapsed btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                <i class="fa fa-question-circle"></i>&nbsp;Can I deploy multiple strategies?
+                                <i class="fa fa-chevron-up mr-3" style="float:right"></i>
+							</button>
+						  </h5>
+							</div>
+							
+                            <div id="collapseFive" class="collapse fade" aria-labelledby="headingFour" data-parent="#accordionExample">
+								<div class="card-body"  style="color: #FFF">
+									Yes you can deploy multiple strategies.
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>	
+			</div>
+		</section>
+	</div>
+</div>
+
+<!-- end accrodian -->
+    
 
         <!-- section content begin -->
         <div class="uk-section uk-section-muted in-liquid-5 uk-background-contain uk-background-top-center in-offset-bottom-40" style="background-image: url(img/in-liquid-5-bg.png);background-color: #2F237C">
@@ -608,18 +754,18 @@ h1,h2,h3,h4,h5{
                         <div class="uk-grid uk-child-width-1-3@s" data-uk-grid>
                             <div class="uk-flex uk-flex-middle">
                                 <div class="uk-margin-right">
-                                    <i class="fas fa-history in-icon-wrap"></i>
+                                    <i class="fas fa-envelope in-icon-wrap"></i>
                                 </div>
                                 <div>
-                                    <h6 class="uk-margin-remove">25 years of Excellence</h6>
+                                    <h6 class="uk-margin-remove">algotradingbot@gmail.com</h6>
                                 </div>
                             </div>
                             <div class="uk-flex uk-flex-middle uk-flex-center@m">
                                 <div class="uk-margin-right">
-                                    <i class="fas fa-trophy in-icon-wrap"></i>
+                                    <i class="fas fa-comments in-icon-wrap" ></i>
                                 </div>
                                 <div>
-                                    <h6 class="uk-margin-remove">15+ Global Awards</h6>
+                                    <h6 class="uk-margin-remove">+91 9096148625</h6>
                                 </div>
                             </div>
                             <div class="uk-flex uk-flex-middle uk-flex-right@m">
@@ -627,7 +773,7 @@ h1,h2,h3,h4,h5{
                                     <i class="fas fa-phone-alt in-icon-wrap"></i>
                                 </div>
                                 <div>
-                                    <h6 class="uk-margin-remove">24/5 Customer Support</h6>
+                                    <h6 class="uk-margin-remove">+9 19096148625</h6>
                                 </div>
                             </div>
                         </div>
@@ -637,61 +783,40 @@ h1,h2,h3,h4,h5{
         </div>
         <div class="uk-section uk-background-secondary uk-light" style="background-color: #2F237C">
             <div class="uk-container uk-text-small">
-                <div class="uk-child-width-1-2@m" data-uk-grid>
-                    <div class="in-footer-logo">
-                    </div>
-                    <div class="uk-flex uk-flex-right@m">
-                        <div class="in-footer-socials">
-                            <a href="#"><i class="fab fa-facebook-square"></i></a>
-                            <a href="#"><i class="fab fa-twitter"></i></a>
-                            <a href="#"><i class="fab fa-youtube"></i></a>
-                            <a href="#"><i class="fab fa-instagram"></i></a>
-                            <a href="#"><i class="fab fa-telegram-plane"></i></a>
-                        </div>
-                        <a class="uk-button uk-button-text uk-margin-large-left uk-visible@m" href="#">Company News</a>
-                        <a class="uk-button uk-button-text uk-margin-large-left uk-visible@m" href="#">Partnership</a>
-                    </div>
-                </div>
                 <div class="uk-child-width-1-2@s uk-child-width-1-4@m uk-margin-large-top" data-uk-grid>
                     <div>
                         <h5>Links</h5>
                         <ul class="uk-list uk-link-text">
-                            <li><a href="index.html">Home</a></li>
-                            <li><a href="#">Strategies</a></li>
-                            <li><a href="contact.html">Contact Us</a></li>
+                            <li><a href="index.html" style="color:#FFF;font-size:17px;text-decoration: none;font-weight: bold;">Home</a></li>
+                            <li><a href="#" style="color:#FFF;font-size:17px;text-decoration: none;font-weight: bold;">Strategies</a></li>
+                            <li><a href="contact.html" style="color:#FFF;font-size:17px;text-decoration: none;font-weight: bold;">Contact Us</a></li>
                         </ul>
                     </div>
                     <div>
                         <h5>Strategies</h5>
                         <ul class="uk-list uk-link-text">
-                            <li><a href="#">Buying Strategies</a></li>
-                            <li><a href="#">Selling Strategies</a></li>
-                            <li><a href="#">Pricing Table</a></li>
+                            <li><a href="#" style="color:#FFF;font-size:17px;text-decoration: none;font-weight: bold;">Buying Strategies</a></li>
+                            <li><a href="#" style="color:#FFF;font-size:17px;text-decoration: none;font-weight: bold;">Selling Strategies</a></li>
+                            <li><a href="#" style="color:#FFF;font-size:17px;text-decoration: none;font-weight: bold;">Pricing Table</a></li>
                            
                         </ul>
                     </div>
                     <div>
                         <h5>User Account</h5>
                         <ul class="uk-list uk-link-text">
-                            <li><a href="account.html">New Registration</a></li>
-                            <li><a href="account.html">Sign-In</a></li>
-                            <li><a href="#">Dashboard</a></li>
+                            <li><a href="account.html" style="color:#FFF;font-size:17px;text-decoration: none;font-weight: bold;">New Registration</a></li>
+                            <li><a href="account.html" style="color:#FFF;font-size:17px;text-decoration: none;font-weight: bold;">Sign-In</a></li>
+                            <li><a href="#" style="color:#FFF;font-size:17px;text-decoration: none;font-weight: bold;">Dashboard</a></li>
                             
                         </ul>
                     </div>
                     <div>
-                        <h5>Learn to Trade</h5>
+                        <h5>others</h5>
                         <ul class="uk-list uk-link-text">
-                            <li><a href="#">News and trade ideas</a></li>
-                            <li><a href="#">Trading strategy</a></li>
-                            <li><a href="#">Forex trading course</a></li>
+                            <li><a href="#" style="color:#FFF;font-size:17px;text-decoration: none;font-weight: bold;">Terms & Conditions</a></li>
+                            <li><a href="#" style="color:#FFF;font-size:17px;text-decoration: none;font-weight: bold;">Privacy Policy</a></li>
+                            <li><a href="#" style="color:#FFF;font-size:17px;text-decoration: none;font-weight: bold;">Refund Polciy</a></li>
                         </ul>
-                    </div>
-                </div>
-                <div class="uk-grid uk-margin-large-top">
-                    <div class="uk-width-1-1">
-                        <p class="uk-heading-line uk-margin-large-bottom"><span>Copyright ©2022 Algo Trade Bot. All Rights Reserved.</span></p>
-                        <p class="in-trading-risk">Trading derivatives and leveraged products carries a high level of risk, including the risk of losing substantially more than your initial investment. It is not suitable for everyone. Before you make any decision in relation to a financial product you should obtain and consider our Product Disclosure Statement (PDS) and Financial Services Guide (FSG) available on our website and seek independent advice if necessary</p>
                     </div>
                 </div>
             </div>
@@ -707,6 +832,7 @@ h1,h2,h3,h4,h5{
     <script src="js/vendors/uikit.min.js"></script>
     <script src="js/vendors/blockit.min.js"></script>
     <script src="js/config-theme.js"></script>
+    
 </body>
 </html>
 
