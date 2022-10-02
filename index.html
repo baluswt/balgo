@@ -32,12 +32,8 @@
      <link rel="stylesheet" type="text/css" href="card.css">
 
      <!-- bootstrap cdn CSS-->
-     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-     <!-- js -->
-     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
      <script src="js/angular.min.js"></script>
      <script src="js/angular-route.js"></script>
      <script src="js/sweetalert.min.js"></script>
@@ -606,110 +602,77 @@ h1,h2,h3,h4,h5{
         <!-- contanier fluid end -->
     </div>
     <!-- Accordion -->
-    <div class="container-fluid bg-gray" id="accordion-style-1">
-	<div class="container">
-		<section>
-			<div class="row">
-				<div class="col-12">
-					<h1 class="text-white mb-4 text-center">Frequently Asked Questions</h1>
-				</div>
-				<div class="col-10 mx-auto">
-					<div class="accordion" id="accordionExample">
-						<div class="card" style="background-color:#2F237C; ">
-							<div class="card-header" id="headingOne">
-								<h5 class="mb-0">
-							<button class="btn btn-default btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-							  <i class="fa fa-question-circle"></i>&nbsp;What is Automated Trading?
-                              <i class="fa fa-chevron-up mr-3" style="float:right"></i>
-							</button>
-						  </h5>
-							</div>
+    <div class="container-fluid col-lg-12 col-md-6 col-sm-6 container justify-content-center" style="margin-top:-30px">
+        <h3 style="text-align: center">Frequently Asked Questions</h3>
+        <br>
+        <div class="accordion" id="myAccordion" style="background-color:#2F237C">
+           
+            <div class="accordion-item" style="background-color:#2F237C">
+                <h2 class="accordion-header" id="headingOne">
+                    <button type="button" class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#collapseOne"><i class="fa fa-question-circle"></i>&nbsp; What is Automated Trading?
+                    </button>									
+                </h2>
+                <div id="collapseOne" class="accordion-collapse show" data-bs-parent="#myAccordion">
+                    <div class="card-body">
+                        <p style="color:#FFF">Automated trading is a trading plan based on buy and sell orders that are automatically placed based on an underlying system or program. The buy or sell orders are placed when the trade conditions in the underlying system or program are met.</p>
+                    </div>
+                </div>
+            
+            </div>
+            <div class="accordion-item" style="background-color:#2F237C">
+                <h2 class="accordion-header" id="headingTwo">
+                    <button type="button" class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#collapseTwo"><i class="fa fa-question-circle"></i>&nbsp;What are features our platform provides?
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#myAccordion">
+                    <div class="card-body">
+                        <p>We provides algo for Nifty and BankNifty Options.</p>
+                    </div>
+                </div>
+            </div>
+           
+            <div class="accordion-item" style="background-color:#2F237C">
+                <h2 class="accordion-header" id="headingThree">
+                    <button type="button" class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#collapseThree"><i class="fa fa-question-circle"></i>&nbsp;Do I require coding knowledge for creating strategies?
+                    </button>                     
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#myAccordion">
+                    <div class="card-body">
+                    <p>No,you don't need coding knowledge for creating strategies.</p>
+                    </div>
+                </div>
+            </div>
 
-							<div id="collapseOne" class="collapse show fade" aria-labelledby="headingOne" data-parent="#accordionExample">
-								<div class="card-body" style="color:white">
-									Automated trading is a trading plan based on buy and sell orders that are automatically placed based on an underlying system or program. 
-                                    The buy or sell orders are placed when the trade conditions in the underlying system or program are met.
-								</div>
-							</div>
-						</div>
-						
-                        <div class="card" style="background-color: #2F237C">
-							<div class="card-header" id="headingTwo">
-								<h5 class="mb-0">
-                                    <button class="btn btn-default btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                        <i class="fa fa-question-circle"></i>&nbsp;What are features our platform provides?
-                                        <i class="fa fa-chevron-up mr-3" style="float:right"></i>
-                                      </button>
-						        </h5>
-							</div>
-							<div id="collapseTwo" class="collapse fade" aria-labelledby="headingTwo" data-parent="#accordionExample">
-								<div class="card-body" style="color:#FFF">
-									We provides algo for Nifty and BankNifty Options.
-								</div>
-							</div>
-						</div>
+            <div class="accordion-item" style="background-color:#2F237C">
+                <h2 class="accordion-header" id="headingFour">
+                    <button type="button" class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#collapseFour"><i class="fa fa-question-circle"></i>&nbsp; What are slippages through our platform?
+                    </button>                     
+                </h2>
+                <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#myAccordion">
+                    <div class="card-body">
+                    <p>We have very less slippages, our platform execute order exact on time which you have configured(Max 1 sec delay can happen). So whenever order get trigger then on same time it'll place stop loss order into broker system and algo keep track on SL.</p>
+                    </div>
+                </div>
+            </div>
 
-						<div class="card" style="background-color: #2F237C">
-							<div class="card-header" id="headingThree">
-								<h5 class="mb-0">
-							<button class="btn btn-default collapsed btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                <i class="fa fa-question-circle"></i>&nbsp;Do I require coding knowledge for creating strategies?
-                                <i class="fa fa-chevron-up mr-3" style="float:right"></i>
-							</button>
-						  </h5>
-							</div>
+            <div class="accordion-item" style="background-color:#2F237C">
+                <h2 class="accordion-header" id="headingFive">
+                    <button type="button" class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#collapseFive"><i class="fa fa-question-circle"></i>&nbsp; Can I deploy multiple strategies?
+                    </button>                     
+                </h2>
+                <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#myAccordion">
+                    <div class="card-body">
+                    <p>Yes you can deploy multiple strategies.</p>
+                    </div>
+                </div>
+            </div>
 
-							<div id="collapseThree" class="collapse fade" aria-labelledby="headingThree" data-parent="#accordionExample">
-								<div class="card-body" style="color: #FFF">
-									No,you don't need coding knowledge for creating strategies.
-								</div>
-							</div>
-						</div>
-
-						<div class="card" style="background-color: #2F237C">
-							<div class="card-header" id="headingFour">
-								<h5 class="mb-0">
-							<button class="btn btn-default collapsed btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                                <i class="fa fa-question-circle"></i>&nbsp;What are slippages through our platform?
-                                <i class="fa fa-chevron-up mr-3" style="float:right"></i>
-							</button>
-						  </h5>
-							</div>
-							
-                            <div id="collapseFour" class="collapse fade" aria-labelledby="headingFour" data-parent="#accordionExample">
-								<div class="card-body"  style="color: #FFF">
-									We have very less slippages, our platform execute order exact on time which you have configured(Max 1 sec delay can happen). So whenever order get trigger then on same time it'll place stop loss order into broker system and algo keep track on SL.
-								</div>
-							</div>
-						</div>
-
-                        <div class="card" style="background-color: #2F237C">
-							<div class="card-header" id="headingFive">
-								<h5 class="mb-0">
-							<button class="btn btn-default collapsed btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                                <i class="fa fa-question-circle"></i>&nbsp;Can I deploy multiple strategies?
-                                <i class="fa fa-chevron-up mr-3" style="float:right"></i>
-							</button>
-						  </h5>
-							</div>
-							
-                            <div id="collapseFive" class="collapse fade" aria-labelledby="headingFour" data-parent="#accordionExample">
-								<div class="card-body"  style="color: #FFF">
-									Yes you can deploy multiple strategies.
-								</div>
-							</div>
-						</div>
-
-					</div>
-				</div>	
-			</div>
-		</section>
-	</div>
-</div>
+        </div>
+    </div>
 
 <!-- end accrodian -->
     
-
+        <br>
         <!-- section content begin -->
         <div class="uk-section uk-section-muted in-liquid-5 uk-background-contain uk-background-top-center in-offset-bottom-40" style="background-image: url(img/in-liquid-5-bg.png);background-color: #2F237C">
             <div class="uk-container">
